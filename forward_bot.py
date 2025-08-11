@@ -1,12 +1,22 @@
 from telethon import TelegramClient, events
+import os
 
 # ==== CONFIG ====
-api_id = 11312838              # from my.telegram.org
-api_hash = 'dd5bfbf1d085b08e8156f9a1a07dff16'   # from my.telegram.org
-source_usernames = ['Saleghar', 'LootJunctionn', '+SyyT78KRclHKYJeP', 'Dc_loots_dcloots', 'gyrodeals', '+opX5gBA8ACozMmZl']  # without @
-earnkaro_bot = 'Affiliaters3Bot'  # without @
+api_id = int(os.getenv("11312838"))           # from my.telegram.org
+api_hash = os.getenv("dd5bfbf1d085b08e8156f9a1a07dff16")            # from my.telegram.org
+
+source_usernames = [
+    'Saleghar',
+    'LootJunctionn',
+    '+SyyT78KRclHKYJeP',
+    'Dc_loots_dcloots',
+    'gyrodeals',
+    '+opX5gBA8ACozMmZl'
+]  # without @
+earnkaro_bot = 'Affiliaters3Bot'            # without @
 # =================
 
+# This will use your pre-saved session, no login prompts
 client = TelegramClient('session_name', api_id, api_hash)
 source_entities = []
 
