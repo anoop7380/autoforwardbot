@@ -8,11 +8,9 @@ api_hash = os.getenv("API_HASH")        # Set in Render env vars
 source_usernames = [
     'Saleghar',
     'LootJunctionn',
-    '+SyyT78KRclHKYJeP',
     'Dc_loots_dcloots',
     'gyrodeals',
-    '+opX5gBA8ACozMmZl'
-]  # without @
+    ]  # without @
 earnkaro_bot = 'Affiliaters3Bot'        # without @
 # =================
 
